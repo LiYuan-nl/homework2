@@ -46,7 +46,7 @@ This is the login page.
     </div>
 
     <!-- 输入部分 -->
-    <form class="form-horizontal">
+    <form class="form-horizontal" method="post" action="/login">
         <div class="box-body">
 
             <!-- 用户名输入：前缀+框 -->
@@ -56,7 +56,7 @@ This is the login page.
                 </label>
 
                 <div class="input1">
-                    <input name = "username" type="text" class="form-control1" id="inputUsername" placeholder="Username" style="height: 27px; width: 530px; margin-bottom: 0.3cm" required>
+                    <input name = "username" type="text" class="form-control1" id="inputUsername" placeholder="Username" style="height: 27px; width: 530px; margin-bottom: 0.3cm" required></input>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@ This is the login page.
                 </label>
 
                 <div class="input2">
-                    <input name = "password" type="password" class="form-control2" id="inputPassword" placeholder="Password " style="height: 27px; width: 530px; margin-bottom: 0.3cm"  required>
+                    <input name = "password" type="password" class="form-control2" id="inputPassword" placeholder="Password " style="height: 27px; width: 530px; margin-bottom: 0.3cm"  required></input>
                 </div>
             </div>
 
@@ -86,7 +86,7 @@ This is the login page.
 
         <!-- 登录、取消按钮 -->
         <div class="card-footer">
-            <button type="submit" class="btn-login" onclick="window.location.href ='/SHOW.html'"
+            <button type="submit" class="btn-login"
                     style=" height: 40px; width:80px; margin-left: 2.9cm; margin-right: 4.5cm; border-radius:15px; background-color: Aliceblue; font-size: medium">
                 <i>Login</i>
             </button>
