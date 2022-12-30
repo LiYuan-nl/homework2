@@ -17,6 +17,7 @@ public class webConfig implements WebMvcConfigurer
     {
         registry.addViewController("/tologin").setViewName("/LOGIN");
         registry.addViewController("/login").setViewName("/LOGIN");
+        registry.addViewController("/register").setViewName("/register");
         registry.addViewController("/").setViewName("/LOGIN");
 
         // 登陆后的主页
@@ -32,6 +33,7 @@ public class webConfig implements WebMvcConfigurer
         registration.excludePathPatterns( //添加不拦截路径
                 "/login",       //登录
                 "/tologin",
+                "/register",    //注册
                 "/**/*.html",   //html静态资源
                 "/**/*.js",     //js静态资源
                 "/**/*.css"     //css静态资源
