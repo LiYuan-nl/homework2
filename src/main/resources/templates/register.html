@@ -6,7 +6,7 @@ This is the login page.
 <head>
     <meta charset="UTF-8">
     <meta name="login" content="width=device-width, initial-scale=1">
-    <title>登录</title>
+    <title>注册</title>
 
     <!-- 背景 -->
     <style>
@@ -41,12 +41,12 @@ This is the login page.
     <!-- 标题 -->
     <div class="box-header">
         <h1 class="box-title" style="color:black; text-align:center">
-            <i>Welcome to Flourish and Blotts</i>
+            <i>Register User</i>
         </h1>
     </div>
 
     <!-- 输入部分 -->
-    <form class="form-horizontal" method="post" action="/login">
+    <form class="form-horizontal" method="post" action="/inregister">
         <div class="box-body">
 
             <!-- 用户名输入：前缀+框 -->
@@ -60,7 +60,7 @@ This is the login page.
                 </div>
             </div>
 
-            <!-- 密码名输入：前缀+框 -->
+            <!-- 密码输入：前缀+框 -->
             <div class="form-group row">
                 <label for="inputPassword" class="form-label2" style="color:black; font-size: x-large">
                     <i>Password</i>
@@ -71,28 +71,9 @@ This is the login page.
                 </div>
             </div>
 
-            <!-- 记住我 -->
-            <div class="form-group row">
-                <div class="remember">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="Check1" style="margin-bottom: 0.8cm">
-                        <label class="form-check-label" for="Check1" style="color:black;">
-                            <i>Remember me</i>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 登录、注册按钮 -->
-        <div class="card-footer">
-            <button type="submit" class="btn-login"
-                    style=" height: 40px; width:80px; margin-left: 2.9cm; margin-right: 4.5cm; border-radius:15px; background-color: Aliceblue; font-size: medium">
-                <i>Login</i>
-            </button>
-
-            <button type="button" class="btn-register" onclick="location='/register'"
-                    style=" height: 40px; width: 80px; border-radius:15px; background-color: Aliceblue; font-size: medium">
+        <!-- 注册按钮 -->
+            <button type="submit" class="btn-register" onclick="location='/tologin'"
+                    style="height: 40px; width: 80px; border-radius:15px; background-color: Aliceblue; font-size: medium">
                 <i>Register</i>
             </button>
         </div>
